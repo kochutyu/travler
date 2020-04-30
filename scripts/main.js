@@ -72,21 +72,21 @@ function animateMap() {
         }, 11.1);
 
         $('.map-1').animate({
-            'left': 0,
+            'left': '0',
             'height': '400px',
         }, 1000, 'linear')
         $('.map-2').animate({
-            'left': 0,
+            'left': '10px',
             'height': '400px',
             'transform': 'rotateX(70deg) rotateY(0deg) perspective(1100px) skew(-15deg, -30deg)'
         }, 1000, 'linear')
         $('.map-3').animate({
-            'left': 0,
+            'left': '20px',
             'height': '400px',
             'transform': 'rotateX(70deg) rotateY(0deg) perspective(1100px) skew(-15deg, -30deg)'
         }, 1000, 'linear', () => {})
         $('.map-4').animate({
-            'left': 0,
+            'left': '30px',
             'height': '400px',
             'transform': 'rotateX(70deg) rotateY(0deg) perspective(1100px) skew(-15deg, -30deg)'
         }, 1000, 'linear')

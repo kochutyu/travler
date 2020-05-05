@@ -102,8 +102,7 @@ function animateMap() {
                 'opacity': 1,
             }, 1000, 'linear')
         }
-    }
-    console.log(checkClick);
+    
 
 }
 let scroll = 0;
@@ -112,7 +111,6 @@ $(window).on('scroll', function () {
     $('.bg-slider-bg').css({
         'top': `${window.pageYOffset/2}px`
     })
-    console.log(document.documentElement.clientHeight);
     const clientHeightMin = document.documentElement.clientHeight / 2;
     if (window.pageYOffset < 200) {
         onScrollMap = false;
@@ -213,7 +211,6 @@ function adaptive() {
             'text-align': 'center',
             'line-height': '35px'
         });
-        console.log($('.service-block:nth-child(2)::after'));
 
     } else if (window.innerWidth >= 820) {
         $('.service-blocks').css({
@@ -222,7 +219,6 @@ function adaptive() {
     }
 
     if (window.innerWidth < 610) {
-        console.log($('.search-logo::after'));
 
         $('.search').css({
             'flex-direction': 'column'
@@ -245,10 +241,6 @@ const startWindowWidth = window.innerWidth;
 let deltaWidth = 0;
 
 function getImgMap() {
-    console.log('---------------------------------------------');
-
-    console.log('preveousWindowWidth', preveousWindowWidth);
-    console.log('window.innerWidth', window.innerWidth);
 
     if (window.innerWidth < 1010) {
         scale = ((window.innerWidth * 0.5) / 840).toFixed(2);
@@ -285,7 +277,5 @@ function getImgMap() {
         left: `-${1200 + deltaWidth}px`
     })
     preveousWindowWidth = window.innerWidth;
-    console.log(deltaWidth);
-
 
 }
